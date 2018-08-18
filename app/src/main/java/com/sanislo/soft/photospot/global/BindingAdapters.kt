@@ -1,11 +1,10 @@
 package com.sanislo.soft.photospot.global
 
-import android.databinding.BindingAdapter
 import android.net.Uri
 import android.view.View
 import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import com.bumptech.glide.Glide
-import de.hdodenhof.circleimageview.CircleImageView
 
 object BindingAdapters {
     @JvmStatic

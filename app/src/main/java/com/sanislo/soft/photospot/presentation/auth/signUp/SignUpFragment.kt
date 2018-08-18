@@ -1,25 +1,20 @@
 package com.sanislo.soft.photospot.presentation.auth.signUp
 
 import android.app.Activity
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.os.Parcelable
 import android.provider.MediaStore
-import android.support.v4.app.Fragment
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
 import com.sanislo.soft.photospot.R
 import com.sanislo.soft.photospot.databinding.FragmentSignUpBinding
 import com.sanislo.soft.photospot.presentation.MainActivity
-import com.sanislo.soft.photospot.presentation.auth.login.LoginViewModel
 import com.sanislo.soft.photospot.presentation.base.BaseFragment
 import dagger.android.support.AndroidSupportInjection
 import javax.inject.Inject
@@ -63,7 +58,7 @@ class SignUpFragment : BaseFragment() {
             pickImage()
         }
         mViewModel.mAvatar.observe(this, Observer {
-            Glide.with(this)
+            Glide.with(context!!)
                     .load(it)
                     .into(mBinding.ivAvatar)
         })

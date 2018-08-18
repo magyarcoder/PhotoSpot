@@ -1,8 +1,8 @@
 package com.sanislo.soft.photospot.presentation.base
 
-import android.support.design.widget.Snackbar
-import android.support.v4.app.Fragment
 import android.view.View
+import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 
 open class BaseFragment : Fragment() {
 

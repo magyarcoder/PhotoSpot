@@ -1,18 +1,17 @@
 package com.sanislo.soft.photospot.presentation.auth.login
 
-import android.arch.lifecycle.Observer
-import android.arch.lifecycle.ViewModelProvider
-import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
-import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import com.sanislo.soft.photospot.R
 import com.sanislo.soft.photospot.databinding.FragmentLoginBinding
 import com.sanislo.soft.photospot.presentation.MainActivity
-import com.sanislo.soft.photospot.presentation.auth.AuthActivity
 import com.sanislo.soft.photospot.presentation.auth.signUp.SignUpFragment
 import com.sanislo.soft.photospot.presentation.base.BaseFragment
 import dagger.android.support.AndroidSupportInjection

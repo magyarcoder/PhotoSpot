@@ -1,17 +1,15 @@
 package com.sanislo.soft.photospot.presentation.auth.signUp
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.ViewModel
-import android.databinding.ObservableField
 import android.net.Uri
 import android.util.Log.d
-import com.google.firebase.auth.AuthResult
+import androidx.databinding.ObservableField
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
-import com.sanislo.soft.photospot.global.SingleLiveEvent
 import com.sanislo.soft.photospot.domain.model.User
+import com.sanislo.soft.photospot.global.SingleLiveEvent
 
 class SignUpViewModel : ViewModel() {
     private val mFirebaseAuth = FirebaseAuth.getInstance()

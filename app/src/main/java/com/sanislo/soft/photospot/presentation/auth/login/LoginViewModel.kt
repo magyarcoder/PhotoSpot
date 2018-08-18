@@ -1,9 +1,9 @@
 package com.sanislo.soft.photospot.presentation.auth.login
 
-import android.arch.lifecycle.ViewModel
-import android.databinding.ObservableField
 import android.text.TextUtils
 import android.util.Log.d
+import androidx.databinding.ObservableField
+import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.sanislo.soft.photospot.global.SingleLiveEvent
